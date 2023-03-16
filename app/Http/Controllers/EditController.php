@@ -25,6 +25,7 @@ class EditController extends Controller
 
     public function store(Request $request)
     {
+        // 保存
         $richedit = new richedit();
         $richedit->fill([
             'title'=> $request->title,
