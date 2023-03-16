@@ -16,7 +16,7 @@ class EditController extends Controller
     public function create(Request $request)
     {
         if (isset($request->id)) {
-            // 編集
+            // 編集 
             $richedit = richedit::find($request->id);
             return view('create', ["richedit" => $richedit]);
         }
