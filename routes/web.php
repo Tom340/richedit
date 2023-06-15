@@ -13,9 +13,7 @@ use App\Http\Controllers\EditController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 Route::get('/', [EditController::class, 'index'])->name('index');
 Route::get('/create', [EditController::class, 'create'])->name('create');
 Route::get('/create/{id}', [EditController::class, 'create'])->name('create');
