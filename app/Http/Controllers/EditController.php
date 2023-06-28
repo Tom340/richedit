@@ -35,4 +35,5 @@ class EditController extends Controller
         
         return redirect('/');
     }
+
 }
