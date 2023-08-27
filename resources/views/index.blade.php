@@ -15,6 +15,7 @@
 @endif
 <h1>投稿一覧</h1>
 <button onclick="location.href='{{asset('/create')}}'">新規投稿</button>
+-----------------------------------------------------------------------
 <div class="container">
     @foreach($richedit as $row)
     <div class="row">
@@ -22,5 +23,6 @@
     </div>
     @endforeach
 </div>
+-----------------------------------------------------------------------
 </body>
 </html>
